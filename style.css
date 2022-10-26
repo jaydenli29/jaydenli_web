@@ -1,0 +1,269 @@
+/*----------------------- Website Resources -----------------------
+--Colors--
+#2B2D42 - dark blue
+#8D99AE - light blue
+#EDF2F4 - blue to white
+#EF233C - red
+
+--Fonts--
+'Arimo', sans-serif
+
+
+https://youtu.be/TK5_AIaK-jY
+----*/
+
+/*----------------------- CSS & HTML Tutorial ----------------------
+https://www.w3schools.com/css/default.asp
+https://www.w3schools.com/html/default.asp
+
+----*/
+
+/*---Starting Website Contents---*/
+/*----------------------- Global Styles -----------------------*/
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+h1, h2{
+    font-family: "'Arimo", sans-serif;
+    font-weight: 400;
+}
+h1 {
+    font-size: 80px;
+}
+h2 {
+    font-size: 40px;
+    margin-top: 0;
+}
+h3 {
+    font-size: 25px;
+    margin: 0;
+}
+p {
+    font-size: 20px;
+}
+
+/*----------------------- Navigation Bar -----------------------*/
+nav {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+
+}
+
+nav a {
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #2B2D42;
+}
+
+@media (min-width: 440px){
+    nav a {
+        margin: 14px;
+        font-size: 16px;
+    }
+}
+
+/*----------------------- Header Only -----------------------*/
+header {
+    position:relative;
+    padding-top: 100px;
+    text-align: center;
+    background-color: #2B2D42;
+    color: #8D99AE;
+    padding-bottom: 10px;
+
+
+}
+
+
+
+.content-wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Set for phone screen */
+    margin: 0 auto;
+    padding: 60px 50px;
+    max-width: 950px;
+    overflow: hidden;
+}
+.name {
+    margin-top: 10px;
+    color: white;
+
+}
+
+
+@media (min-width: 935px) {
+    .content-wrap {
+        flex-direction: row; /* Set for wide screen */
+    }
+}
+
+.profile_img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+
+@media (min-width: 440px) {
+    .profile_img {
+        width: 250px;   /* Set for smaller screen device */
+        height: 250px;
+        border-radius: 50%;
+    }
+}
+
+@media (min-width: 935px) {
+    .profile_img {
+        width: 250px;   /* Set for bigger screen device */
+        height: 250px;
+        border-radius: 50%;
+    }
+}
+
+/*----------------------- Red Download Button -----------------------*/
+.btn {
+    text-decoration: none;
+    background-color: #EF233C;
+    color: white;
+    padding: 100px 50px 100px 50px;
+}
+
+@media (min-width: 440px) {
+    .btn {
+        padding: 10px;
+    }
+}
+
+.download {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+/*----------------------- About Me -----------------------*/
+.introduction {
+    padding-top: 40px;
+}
+.info {
+    margin: 0 auto;
+    padding: 0px 30px; /*--top and bottom padding are 0px, left and right are 30px--*/
+    max-width: 950px;
+
+}
+
+
+/*----------------------- Course -----------------------*/
+.course_experience {
+    padding-top:60px;
+    background-color: #EDF2F4;  
+}
+
+.courses {
+    margin: 0 auto;
+    padding: 0px 30px; /*--top and bottom padding are 0px, left and right are 30px--*/
+    max-width: 950px;
+}
+
+.course_name {
+    display: block;
+    padding-bottom: 30px;
+}
+
+@media (min-width: 935px) {
+    .course_name {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        column-gap: 30px;
+    }
+}
+
+
+@media (min-width: 935px) { 
+   .course_description p:first-of-type { /*--set the first of p-type margin  = 0 in course_description class --*/
+        margin-top: 0;
+   }
+}
+
+@media (min-width: 935px) { 
+    .course_name p:first-of-type { /*--set the first of p-type margin  = 0 in course_description class --*/
+         margin-top: 0;
+    }
+ }
+ 
+
+
+ ol li { /*--set the format for all the li(lists) under the ol--*/
+    margin:8px 0px;
+    padding-left: 15px;
+ }
+
+ li a { /*--set the format for all the a-tag in the li(lists) --*/
+    color: blue;
+    text-decoration: underline;
+    
+ }
+/*----------------------- Education -----------------------*/
+ .Education {
+    padding: 40px 0px;
+    /*--set gradient values--*/
+    background: linear-gradient(rgba(141, 153, 174, 0.9), rgba(141, 153, 174, 0.8)),
+                url(./src/syracuse_background.jpeg) no-repeat fixed;
+    background-size: cover;
+}
+.college {
+    margin: 0 auto;
+    padding: 0px 30px; /*--top and bottom padding are 0px, left and right are 30px--*/
+    max-width: 950px;
+}
+.skill {
+    padding-top: 40px;
+}
+
+/*----------------------- footer -----------------------*/
+footer {
+    padding-top: 30px;
+    text-align: center;
+    background-color: #2B2D42;
+    color: #8D99AE;
+}
+
+.content_wrap {
+    margin: 0 auto;
+    padding: 50px 0px;
+    max-width: 900px;
+}
+.contact_buton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.media_pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: #8D99AE solid 2px;
+}
+.media_pic:hover {
+    transform: scale(1.1);
+}
+
+p+h3 {
+    margin-top: 30px;
+}
+
+footer p {
+    margin-top: 50px;
+}
